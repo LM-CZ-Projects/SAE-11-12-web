@@ -1,8 +1,15 @@
+@use "../../modules/mixins";
+
 .rules {
   display: flex;
   grid-gap: 4em;
   flex-direction: column;
   justify-content: center;
+
+  @include mixins.break {
+    grid-gap: 5em;
+    padding: 5em var(--default-horizontal-padding) !important;
+  }
 
   > .content {
     padding: 0 3em;
@@ -13,6 +20,11 @@
       grid-gap: 8em;
       align-items: center;
       justify-content: space-around;
+
+      @include mixins.break {
+        grid-gap: 3.5em;
+        flex-direction: column;
+      }
 
       > .item {
         display: flex;

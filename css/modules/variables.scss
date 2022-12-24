@@ -1,5 +1,13 @@
+@use "./mixins";
+
 :root {
   --default-horizontal-padding: 5rem;
 
   --timeline-box-max-width: 35rem;
+
+  @include mixins.break {
+    --default-horizontal-padding: 1.5rem;
+
+    --timeline-box-max-width: calc(100vw - 2 * var(--default-horizontal-padding));
+  }
 }

@@ -14,6 +14,12 @@ body {
   font-weight: normal;
   font-family: "Poppins", sans-serif;
 }
+@media all and (max-width: 55rem) {
+  html,
+body {
+    font-size: 14px;
+  }
+}
 
 /* TEXTS */
 h1,

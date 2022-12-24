@@ -10,55 +10,117 @@ body > .header {
   background-color: var(--header-background);
   padding: 1.5rem var(--default-horizontal-padding);
 }
-
+@media all and (max-width: 55rem) {
+  body > .header {
+    bottom: 0;
+    top: unset;
+    height: 7em;
+    padding: 1.5em;
+  }
+}
 body > .header > .logo {
   height: 2rem;
 }
-
+@media all and (max-width: 55rem) {
+  body > .header > .logo {
+    display: none;
+  }
+}
+@media all and (max-width: 55rem) {
+  body > .header > .menu {
+    width: 100%;
+    height: 100%;
+  }
+}
 body > .header > .menu > .content {
+  width: 100%;
   display: flex;
 }
-
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content {
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 body > .header > .menu > .content > .item > .link {
   opacity: 0.5;
   display: flex;
-  grid-gap: 0.5em;
+  grid-gap: 0.5rem;
+  text-align: center;
   align-items: center;
-  padding: 0.75em 1.5em;
+  padding: 0.75rem 1.5rem;
   flex-direction: column;
   transition: opacity 350ms ease;
 }
-
-body > .header > .menu > .content > .item > .link:hover,
-body > .header > .menu > .content > .item > .link:focus {
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content > .item > .link {
+    grid-gap: 0.5rem;
+    font-size: 0.75em;
+    flex-direction: column;
+  }
+}
+body > .header > .menu > .content > .item > .link:hover, body > .header > .menu > .content > .item > .link:focus {
   opacity: 1;
+}
+body > .header > .menu > .content > .item > .link > .icon {
+  width: 1.5rem;
+  display: none;
+  aspect-ratio: 1/1;
+}
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content > .item > .link > .icon {
+    display: block;
+  }
 }
 
 .footer {
   width: 100%;
   display: flex;
-  padding: 2rem 5rem;
   align-items: center;
   justify-content: space-between;
+  padding: 2em var(--default-horizontal-padding);
 }
-
-.footer > .credits,
+@media all and (max-width: 55rem) {
+  .footer {
+    grid-gap: 5em;
+    margin-bottom: 7em;
+    flex-direction: column;
+  }
+}
+.footer > .credits {
+  display: flex;
+  grid-gap: 0.5em;
+  flex-direction: column;
+}
+@media all and (max-width: 55rem) {
+  .footer > .credits {
+    width: 100%;
+    padding: 0 1.5em;
+  }
+}
 .footer > .credits > .authors {
   display: flex;
   grid-gap: 0.5em;
   flex-direction: column;
 }
-
-.footer > .credits > .label {
-  font-weight: 500;
+@media all and (max-width: 55rem) {
+  .footer > .credits > .authors {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
 .footer > .credits > .authors > .person {
   display: flex;
   grid-gap: 1rem;
   align-items: center;
 }
-
+@media all and (max-width: 55rem) {
+  .footer > .credits > .authors > .person {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .footer > .credits > .authors > .person::before {
   content: "";
   height: 2px;
@@ -67,17 +129,14 @@ body > .header > .menu > .content > .item > .link:focus {
   border-radius: 1px;
   background-color: currentColor;
 }
-
 .footer > .credits > .authors > .person > .identity {
   order: -1;
   font-weight: 800;
 }
-
 .footer > .credits > .authors > .person > .social-link {
   font-weight: 300;
   position: relative;
 }
-
 .footer > .credits > .authors > .person > .social-link::after {
   left: 0;
   bottom: 0;
@@ -90,28 +149,24 @@ body > .header > .menu > .content > .item > .link:focus {
   background-color: currentColor;
   transition: transform 350ms ease-in-out;
 }
-
-.footer > .credits > .authors > .person > .social-link:hover::after,
-.footer > .credits > .authors > .person > .social-link:focus::after {
+.footer > .credits > .authors > .person > .social-link:hover::after, .footer > .credits > .authors > .person > .social-link:focus::after {
   transform: none;
   transform-origin: left center;
 }
-
+.footer > .credits > .label {
+  font-weight: 500;
+}
 .footer > .project > .links {
   display: flex;
   grid-gap: 1.5rem;
   align-items: center;
 }
-
 .footer > .project > .links > .location > .link {
   transition: opacity 350ms ease-in-out;
 }
-
-.footer > .project > .links > .location > .link:hover,
-.footer > .project > .links > .location > .link:focus {
+.footer > .project > .links > .location > .link:hover, .footer > .project > .links > .location > .link:focus {
   opacity: 0.5;
 }
-
 .footer > .project > .links > .location > .link > svg {
   height: 2rem;
 }
@@ -124,6 +179,11 @@ body > .header > .menu > .content > .item > .link:focus {
 }
 .hero > .heading {
   width: 26.125em !important;
+}
+@media all and (max-width: 55rem) {
+  .hero > .heading {
+    width: 100% !important;
+  }
 }
 .hero > .heading > .title {
   font-size: 3em !important;
@@ -154,6 +214,11 @@ body > .header > .menu > .content > .item > .link:focus {
   display: flex;
   align-items: center;
   background-color: var(--background-accent);
+}
+@media all and (max-width: 55rem) {
+  .hero > .icons-container {
+    display: none;
+  }
 }
 .hero > .icons-container > .grid {
   display: flex;
@@ -307,6 +372,12 @@ body > .header > .menu > .content > .item > .link:focus {
   flex-direction: column;
   justify-content: center;
 }
+@media all and (max-width: 55rem) {
+  .rules {
+    grid-gap: 5em;
+    padding: 5em var(--default-horizontal-padding) !important;
+  }
+}
 .rules > .content {
   padding: 0 3em;
 }
@@ -316,6 +387,12 @@ body > .header > .menu > .content > .item > .link:focus {
   grid-gap: 8em;
   align-items: center;
   justify-content: space-around;
+}
+@media all and (max-width: 55rem) {
+  .rules > .content > .slides {
+    grid-gap: 3.5em;
+    flex-direction: column;
+  }
 }
 .rules > .content > .slides > .item {
   display: flex;
@@ -524,12 +601,23 @@ html {
   color: var(--text-color);
   background-color: var(--background);
 }
+html::-webkit-scrollbar {
+  width: 0;
+  appearance: none;
+}
 
 .section {
   width: 100%;
   height: 100vh;
   overflow-y: auto;
   padding: 0 var(--default-horizontal-padding);
+}
+@media all and (max-width: 55rem) {
+  .section {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
 }
 .section:nth-child(2n) {
   background-color: var(--background-alt);
@@ -539,6 +627,11 @@ html {
   display: flex;
   grid-gap: 1em;
   flex-direction: column;
+}
+@media all and (max-width: 55rem) {
+  .section > .heading {
+    width: var(--timeline-box-max-width);
+  }
 }
 .section > .heading > .icon {
   width: 4em;

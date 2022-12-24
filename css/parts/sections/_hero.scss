@@ -1,3 +1,5 @@
+@use "../../modules/mixins";
+
 .hero {
   display: flex;
   align-items: center;
@@ -6,6 +8,10 @@
 
   > .heading {
     width: 26.125em !important;
+
+    @include mixins.break {
+      width: 100% !important;
+    }
 
     > .title {
       font-size: 3em !important;
@@ -45,6 +51,10 @@
     display: flex;
     align-items: center;
     background-color: var(--background-accent);
+
+    @include mixins.break {
+      display: none;
+    }
 
     > .grid {
       display: flex;

@@ -2,5 +2,11 @@
   --default-horizontal-padding: 5rem;
   --timeline-box-max-width: 35rem;
 }
+@media all and (max-width: 55rem) {
+  :root {
+    --default-horizontal-padding: 1.5rem;
+    --timeline-box-max-width: calc(100vw - 2 * var(--default-horizontal-padding));
+  }
+}
 
 /*# sourceMappingURL=variables.css.map */
