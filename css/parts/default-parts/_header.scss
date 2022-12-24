@@ -39,15 +39,11 @@ body > .header {
 
       @include mixins.break {
         height: 100%;
-        align-items: stretch;
+        align-items: center;
         justify-content: space-around;
       }
 
       > .item {
-        @include mixins.break {
-          height: 100%;
-        }
-
         > .link {
           opacity: .5;
           display: flex;
@@ -62,7 +58,6 @@ body > .header {
             grid-gap: .5rem;
             font-size: .75em;
             flex-direction: column;
-            justify-content: space-between;
           }
 
           &:hover, &:focus {

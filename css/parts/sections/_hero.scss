@@ -9,6 +9,10 @@
   > .heading {
     width: 26.125em !important;
 
+    @include mixins.break {
+      width: 100% !important;
+    }
+
     > .title {
       font-size: 3em !important;
     }
