@@ -55,6 +55,7 @@ body > .header {
           transition: opacity 350ms ease;
 
           @include mixins.break {
+            padding: 0;
             grid-gap: .5rem;
             font-size: .75em;
             flex-direction: column;

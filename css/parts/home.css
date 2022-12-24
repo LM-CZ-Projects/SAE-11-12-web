@@ -55,6 +55,7 @@ body > .header > .menu > .content > .item > .link {
 }
 @media all and (max-width: 55rem) {
   body > .header > .menu > .content > .item > .link {
+    padding: 0;
     grid-gap: 0.5rem;
     font-size: 0.75em;
     flex-direction: column;
