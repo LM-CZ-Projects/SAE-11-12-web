@@ -1,0 +1,10 @@
+@forward "./sections/hero";
+@forward "./sections/history";
+@forward "./sections/rules";
+@forward "./sections/grids";
+@forward "./sections/online-games";
+@forward "./sections/society-games";
+
+html {
+  scroll-behavior: smooth;
+}
