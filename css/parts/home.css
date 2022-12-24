@@ -10,28 +10,74 @@ body > .header {
   background-color: var(--header-background);
   padding: 1.5rem var(--default-horizontal-padding);
 }
-
+@media all and (max-width: 55rem) {
+  body > .header {
+    bottom: 0;
+    top: unset;
+    height: 7em;
+    padding: 1.5em;
+  }
+}
 body > .header > .logo {
   height: 2rem;
 }
-
+@media all and (max-width: 55rem) {
+  body > .header > .logo {
+    display: none;
+  }
+}
+@media all and (max-width: 55rem) {
+  body > .header > .menu {
+    width: 100%;
+    height: 100%;
+  }
+}
 body > .header > .menu > .content {
+  width: 100%;
   display: flex;
 }
-
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content {
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content > .item {
+    height: 100%;
+  }
+}
 body > .header > .menu > .content > .item > .link {
   opacity: 0.5;
   display: flex;
-  grid-gap: 0.5em;
+  grid-gap: 0.5rem;
+  text-align: center;
   align-items: center;
-  padding: 0.75em 1.5em;
+  padding: 0.75rem 1.5rem;
   flex-direction: column;
   transition: opacity 350ms ease;
 }
-
-body > .header > .menu > .content > .item > .link:hover,
-body > .header > .menu > .content > .item > .link:focus {
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content > .item > .link {
+    grid-gap: 0.5rem;
+    font-size: 0.75em;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+body > .header > .menu > .content > .item > .link:hover, body > .header > .menu > .content > .item > .link:focus {
   opacity: 1;
+}
+body > .header > .menu > .content > .item > .link > .icon {
+  width: 1.5rem;
+  display: none;
+  aspect-ratio: 1/1;
+}
+@media all and (max-width: 55rem) {
+  body > .header > .menu > .content > .item > .link > .icon {
+    display: block;
+  }
 }
 
 .footer {
@@ -154,6 +200,11 @@ body > .header > .menu > .content > .item > .link:focus {
   display: flex;
   align-items: center;
   background-color: var(--background-accent);
+}
+@media all and (max-width: 55rem) {
+  .hero > .icons-container {
+    display: none;
+  }
 }
 .hero > .icons-container > .grid {
   display: flex;

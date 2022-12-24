@@ -1,3 +1,5 @@
+@use "../modules/mixins";
+
 /* DEFAULTS */
 *,
 *::before,
@@ -13,6 +15,10 @@ body {
   font-style: normal;
   font-weight: normal;
   font-family: 'Poppins', sans-serif;
+
+  @include mixins.break {
+    font-size: 14px;
+  }
 }
 
 /* TEXTS */

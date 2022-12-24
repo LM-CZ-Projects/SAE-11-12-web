@@ -1,3 +1,5 @@
+@use "../../modules/mixins";
+
 .hero {
   display: flex;
   align-items: center;
@@ -45,6 +47,10 @@
     display: flex;
     align-items: center;
     background-color: var(--background-accent);
+
+    @include mixins.break {
+      display: none;
+    }
 
     > .grid {
       display: flex;

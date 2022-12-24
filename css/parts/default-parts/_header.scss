@@ -1,3 +1,5 @@
+@use "../../modules/mixins";
+
 body > .header {
   top: 0;
   left: 0;
@@ -9,27 +11,75 @@ body > .header {
   justify-content: space-between;
   background-color: var(--header-background);
   padding: 1.5rem var(--default-horizontal-padding);
-}
 
-body > .header > .logo {
-  height: 2rem;
-}
+  @include mixins.break {
+    bottom: 0;
+    top: unset;
+    height: 7em;
+    padding: 1.5em;
+  }
 
-body > .header > .menu > .content {
-  display: flex;
-}
+  > .logo {
+    height: 2rem;
 
-body > .header > .menu > .content > .item > .link {
-  opacity: .5;
-  display: flex;
-  grid-gap: .5em;
-  align-items: center;
-  padding: .75em 1.5em;
-  flex-direction: column;
-  transition: opacity 350ms ease;
-}
+    @include mixins.break {
+      display: none;
+    }
+  }
 
-body > .header > .menu > .content > .item > .link:hover,
-body > .header > .menu > .content > .item > .link:focus {
-  opacity: 1;
+  > .menu {
+    @include mixins.break {
+      width: 100%;
+      height: 100%;
+    }
+
+    > .content {
+      width: 100%;
+      display: flex;
+
+      @include mixins.break {
+        height: 100%;
+        align-items: stretch;
+        justify-content: space-around;
+      }
+
+      > .item {
+        @include mixins.break {
+          height: 100%;
+        }
+
+        > .link {
+          opacity: .5;
+          display: flex;
+          grid-gap: .5rem;
+          text-align: center;
+          align-items: center;
+          padding: .75rem 1.5rem;
+          flex-direction: column;
+          transition: opacity 350ms ease;
+
+          @include mixins.break {
+            grid-gap: .5rem;
+            font-size: .75em;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          &:hover, &:focus {
+            opacity: 1;
+          }
+
+          > .icon {
+            width: 1.5rem;
+            display: none;
+            aspect-ratio: 1 / 1;
+
+            @include mixins.break {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }
