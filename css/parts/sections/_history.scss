@@ -1,3 +1,108 @@
 .history {
+  display: flex;
+  grid-gap: 7.5em;
+  padding: 0 !important;
+  flex-direction: column;
+  justify-content: center;
 
+  > .heading {
+    margin-left: var(--default-horizontal-padding);
+  }
+
+  > .content {
+    overflow-x: auto;
+    padding: 0 var(--default-horizontal-padding);
+
+    &::-webkit-scrollbar {
+      appearance: none;
+    }
+
+    > .timeline {
+      display: flex;
+      grid-gap: 2.5em;
+      position: relative;
+      width: max-content;
+      align-items: flex-end;
+
+      &::after {
+        left: 0;
+        content: '';
+        width: 100%;
+        height: .5em;
+        bottom: .375em;
+        position: absolute;
+        border-radius: 1em;
+        transform: translateY(-50%);
+        background-color: var(--background-accent);
+      }
+
+      > .item {
+        width: 100%;
+        display: flex;
+        flex: 0 0 auto;
+        grid-gap: 1.5em;
+        flex-direction: column;
+        max-width: var(--timeline-box-max-width);
+
+        > .box {
+          padding: 1em;
+          display: flex;
+          grid-gap: .5em;
+          border-radius: 1em;
+          position: relative;
+          flex-direction: column;
+          background-color: var(--background-alt);
+          border: .125em solid var(--background-accent);
+
+          &::after {
+            left: 2em;
+            bottom: 0;
+            width: 1em;
+            content: '';
+            display: block;
+            position: absolute;
+            aspect-ratio: 1 / 1;
+            background-color: var(--background-accent);
+            transform: translate(-50%, 50%) rotate(45deg);
+          }
+
+          > .date {
+            font-weight: 700;
+            line-height: 100%;
+            font-size: 1.25em;
+            font-family: 'Times New Roman', serif;
+          }
+
+          > .description {
+            line-height: 175%;
+          }
+        }
+
+        > .dot {
+          z-index: 1;
+          width: 1.75em;
+          left: 2.375em;
+          position: relative;
+          border-radius: 50%;
+          aspect-ratio: 1 / 1;
+          display: inline-block;
+          transform: translateX(-65%);
+          background-color: var(--dot-shadow);
+
+          &::before {
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            content: '';
+            width: .75em;
+            border-radius: 50%;
+            position: absolute;
+            aspect-ratio: 1 / 1;
+            transform: translate(-50%, -50%);
+            background-color: var(--background-accent);
+          }
+        }
+      }
+    }
+  }
 }

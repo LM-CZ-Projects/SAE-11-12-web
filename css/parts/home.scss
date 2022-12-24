@@ -1,10 +1,46 @@
+@forward "./default-parts/header";
+@forward "./default-parts/footer";
+
 @forward "./sections/hero";
 @forward "./sections/history";
 @forward "./sections/rules";
 @forward "./sections/grids";
 @forward "./sections/online-games";
-@forward "./sections/society-games";
 
 html {
   scroll-behavior: smooth;
+  color: var(--text-color);
+  background-color: var(--background);
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0 var(--default-horizontal-padding);
+
+  &:nth-child(2n) {
+    background-color: var(--background-alt);
+  }
+
+  > .heading {
+    width: 20em;
+    display: flex;
+    grid-gap: 1em;
+    flex-direction: column;
+
+    > .icon {
+      width: 4em;
+      aspect-ratio: 1 / 1;
+    }
+
+    > .title {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    > .subtitle {
+      line-height: 175%;
+    }
+  }
 }

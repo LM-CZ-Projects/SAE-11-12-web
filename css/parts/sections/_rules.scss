@@ -1,0 +1,43 @@
+.rules {
+  display: flex;
+  grid-gap: 4em;
+  flex-direction: column;
+  justify-content: center;
+
+  > .content {
+    padding: 0 3em;
+
+    > .slides {
+      width: 100%;
+      display: flex;
+      grid-gap: 8em;
+      align-items: center;
+      justify-content: space-around;
+
+      > .item {
+        display: flex;
+        grid-gap: 1em;
+        flex: 0 0 auto;
+        max-width: 15em;
+        align-items: center;
+        flex-direction: column;
+
+        > .icon {
+          width: 7em;
+          aspect-ratio: 1 / 1;
+        }
+
+        > .title {
+          font-weight: 700;
+          font-size: 1.25em;
+          line-height: 175%;
+        }
+
+        > .description {
+          line-height: 175%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

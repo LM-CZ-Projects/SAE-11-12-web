@@ -23,9 +23,8 @@
     <!-- STYLES IMPORT -->
     <link rel="stylesheet" href="css/modules/variables.css" type="text/css" />
     <link rel="stylesheet" href="css/themes/light.css" type="text/css" /> <!-- THEME CAN BE CHANGED -->
-    <link rel="stylesheet" href="css/modules/animations.css" type="text/css" />
+<!--    <link rel="stylesheet" href="css/modules/animations.css" type="text/css" />-->
     <link rel="stylesheet" href="css/default/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="css/default/master.css" type="text/css" />
     <link rel="stylesheet" href="css/parts/home.css" type="text/css" />
 
     <title>Sudoku | Solver</title>
@@ -152,9 +151,9 @@
         <article class="content">
           <ul class="slides">
             <li class="item">
-              <svg class="icon" viewBox="0 0 112 112" fill="none"><rect width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="28" width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="60" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="88" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="60" y="28" width="24" height="24" rx="5" fill="#F3DEBB"/>
+              <svg class="icon" viewBox="0 0 112 112" fill="none"><rect width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="28" width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="60" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="88" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="60" y="28" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="59" y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="59" y="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="88" y="28" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="87" y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="87" y="88" width="24" height="24" rx="5" fill="#F3DEBB"/></svg>
               <h2 class="title">Unicité en colonne</h2>
-              <p class="description">Chaque chiffre  n’a le droit d’apparaître qu’une fois dans la colonne.</p>
+              <p class="description">Chaque chiffre n’a le droit d’apparaître qu’une fois dans la colonne.</p>
             </li>
             <li class="item">
               <svg class="icon" viewBox="0 0 112 112" fill="none"><rect width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect y="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="28" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="28" y="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="28" y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="28" y="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="60" y="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="59" y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="59" y="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="88" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="88" y="28" width="24" height="24" rx="5" fill="#DDA3E2"/><rect x="87" y="60" width="24" height="24" rx="5" fill="#F3DEBB"/><rect x="87" y="88" width="24" height="24" rx="5" fill="#F3DEBB"/></svg>
@@ -171,7 +170,11 @@
       </section>
 
       <section id="grids" class="section grids">
-
+        <article class="heading">
+          <svg class="icon" viewBox="0 0 64 64" fill="none"><path d="M18.5067 37.4292C17.8853 39.0933 17.36 40.6292 16.8907 42.1839C19.4507 40.3252 22.4933 39.1466 26.0053 38.7066C32.7067 37.8693 38.6613 33.4452 41.6747 27.8853L37.792 24.0053L41.56 20.2319L44.2267 17.5626C45.3733 16.4159 46.6667 14.2986 48.0347 11.2479C33.12 13.5599 23.9867 22.6933 18.504 37.4292H18.5067ZM45.3333 24.0026L48 26.6666C45.3333 34.6666 37.3333 42.6666 26.6667 43.9999C19.5493 44.8906 15.104 49.7786 13.328 58.6666H8C10.6667 42.6666 16 5.33325 56 5.33325C53.3333 13.3253 50.672 18.6559 48.008 21.3253L45.3333 24.0026Z" fill="currentColor"/></svg>
+          <h1 class="title">Quelques exemples</h1>
+          <h2 class="subtitle">Retrouvez quelques grilles résolues par notre solveur en différentes dimensions.</h2>
+        </article>
       </section>
 
       <section id="online" class="section online-games">
@@ -183,68 +186,78 @@
 
         <article class="content">
           <ul class="list">
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">sudoku.com</h2>
-              <p class="description">Découvrez des grilles de tous niveaux.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">sudoku.com</h2>
+                <p class="description">Découvrez des grilles de tous niveaux.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-              </ul>
-              <h2 class="title">sudoku-online.net</h2>
-              <p class="description">Difficultés variées, ce site devrait vous plaire.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                </ul>
+                <h2 class="title">sudoku-online.net</h2>
+                <p class="description">Difficultés variées, ce site devrait vous plaire.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">e-sudoku.fr</h2>
-              <p class="description">Grilles de tous niveaux et toutes tailles.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">e-sudoku.fr</h2>
+                <p class="description">Grilles de tous niveaux et toutes tailles.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">sudokuonline.io</h2>
-              <p class="description">Sudoku moderne, tout pour plaire à vos yeux.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">sudokuonline.io</h2>
+                <p class="description">Sudoku moderne, tout pour plaire à vos yeux.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">sudoku.com</h2>
-              <p class="description">Découvrez des grilles de tous niveaux.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">sudoku.com</h2>
+                <p class="description">Découvrez des grilles de tous niveaux.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
           </ul>
         </article>
@@ -259,73 +272,82 @@
 
         <article class="content">
           <ul class="list">
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">sudoku.com</h2>
-              <p class="description">Découvrez des grilles de tous niveaux.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">sudoku.com</h2>
+                <p class="description">Découvrez des grilles de tous niveaux.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-              </ul>
-              <h2 class="title">sudoku-online.net</h2>
-              <p class="description">Difficultés variées, ce site devrait vous plaire.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                </ul>
+                <h2 class="title">sudoku-online.net</h2>
+                <p class="description">Difficultés variées, ce site devrait vous plaire.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">e-sudoku.fr</h2>
-              <p class="description">Grilles de tous niveaux et toutes tailles.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">e-sudoku.fr</h2>
+                <p class="description">Grilles de tous niveaux et toutes tailles.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">sudokuonline.io</h2>
-              <p class="description">Sudoku moderne, tout pour plaire à vos yeux.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">sudokuonline.io</h2>
+                <p class="description">Sudoku moderne, tout pour plaire à vos yeux.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
-            <li class="box" style="">
-              <ul class="tags">
-                <li class="item">Web</li>
-                <li class="item">Mobile</li>
-                <li class="item">Desktop</li>
-              </ul>
-              <h2 class="title">sudoku.com</h2>
-              <p class="description">Découvrez des grilles de tous niveaux.</p>
-              <a href="" class="visit">
-                Découvrir
-                <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
-              </a>
+            <li class="box" style="--img-url: url('https://images.unsplash.com/photo-1586030301401-54386553db94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+              <div class="container">
+                <ul class="tags">
+                  <li class="item">Web</li>
+                  <li class="item">Mobile</li>
+                  <li class="item">Desktop</li>
+                </ul>
+                <h2 class="title">sudoku.com</h2>
+                <p class="description">Découvrez des grilles de tous niveaux.</p>
+                <a href="" class="visit">
+                  Découvrir
+                  <svg viewBox="0 0 10 10" fill="none"><path d="M0.646447 8.88905C0.451184 9.08431 0.451184 9.4009 0.646447 9.59616C0.841709 9.79142 1.15829 9.79142 1.35355 9.59616L0.646447 8.88905ZM9.98528 0.757324C9.98528 0.481182 9.76142 0.257324 9.48528 0.257324H4.98528C4.70914 0.257324 4.48528 0.481182 4.48528 0.757324C4.48528 1.03347 4.70914 1.25732 4.98528 1.25732H8.98528V5.25732C8.98528 5.53347 9.20914 5.75732 9.48528 5.75732C9.76142 5.75732 9.98528 5.53347 9.98528 5.25732V0.757324ZM1.35355 9.59616L9.83883 1.11088L9.13173 0.403771L0.646447 8.88905L1.35355 9.59616Z" fill="currentColor"/></svg>
+                </a>
+              </div>
             </li>
           </ul>
         </article>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -339,7 +361,7 @@
           <li class="person">
             <p class="identity">Loïc MAES</p>
             <a href="https://www.github.com/loicmaes/" target="_blank" class="social-link">GitHub</a>
-            <a href="https://www.instagram.com/loicmaes.society" target="_blank" class="social-link">Instagram</a>
+            <a href="https://www.instagram.com/loicmaes.services" target="_blank" class="social-link">Instagram</a>
             <a href="https://www.maesloic.fr/" target="_blank" class="social-link">Site Web</a>
           </li>
         </ul>
@@ -353,7 +375,7 @@
             </a>
           </li>
           <li class="location">
-            <a href="https://www.github.com/LM-CZ-Projects/SAE-11-12.git" target="_blank" class="link" title="Répertoire GitHub">
+            <a href="https://www.github.com/orgs/LM-CZ-Projects/repositories" target="_blank" class="link" title="Répertoire GitHub">
               <svg viewBox="0 0 32 32" fill="none"><path d="M16 2.6665C14.249 2.6665 12.5152 3.01138 10.8975 3.68144C9.27984 4.35151 7.80998 5.33363 6.57187 6.57175C4.07138 9.07223 2.66663 12.4636 2.66663 15.9998C2.66663 21.8932 6.49329 26.8932 11.7866 28.6665C12.4533 28.7732 12.6666 28.3598 12.6666 27.9998V25.7465C8.97329 26.5465 8.18663 23.9598 8.18663 23.9598C7.57329 22.4132 6.70663 21.9998 6.70663 21.9998C5.49329 21.1732 6.79996 21.1998 6.79996 21.1998C8.13329 21.2932 8.83996 22.5732 8.83996 22.5732C9.99996 24.5998 11.96 23.9998 12.72 23.6798C12.84 22.8132 13.1866 22.2265 13.56 21.8932C10.6 21.5598 7.49329 20.4132 7.49329 15.3332C7.49329 13.8532 7.99996 12.6665 8.86663 11.7198C8.73329 11.3865 8.26663 9.99984 8.99996 8.19984C8.99996 8.19984 10.12 7.83984 12.6666 9.55984C13.72 9.2665 14.8666 9.11984 16 9.11984C17.1333 9.11984 18.28 9.2665 19.3333 9.55984C21.88 7.83984 23 8.19984 23 8.19984C23.7333 9.99984 23.2666 11.3865 23.1333 11.7198C24 12.6665 24.5066 13.8532 24.5066 15.3332C24.5066 20.4265 21.3866 21.5465 18.4133 21.8798C18.8933 22.2932 19.3333 23.1065 19.3333 24.3465V27.9998C19.3333 28.3598 19.5466 28.7865 20.2266 28.6665C25.52 26.8798 29.3333 21.8932 29.3333 15.9998C29.3333 14.2489 28.9884 12.5151 28.3184 10.8974C27.6483 9.27972 26.6662 7.80986 25.428 6.57175C24.1899 5.33363 22.7201 4.35151 21.1024 3.68144C19.4847 3.01138 17.7509 2.6665 16 2.6665V2.6665Z" fill="currentColor"/></svg>
             </a>
           </li>
