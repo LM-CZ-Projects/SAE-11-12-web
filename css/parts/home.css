@@ -58,6 +58,7 @@ body > .header > .menu > .content > .item > .link {
     padding: 0;
     grid-gap: 0.5rem;
     font-size: 0.75em;
+    flex: 1 1 16.67%;
     flex-direction: column;
   }
 }
