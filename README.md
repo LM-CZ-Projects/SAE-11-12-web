@@ -6,11 +6,11 @@ Please note that this website does not include a feature for the user to play su
 
 ## Prerequisites
 
-To view and modify this project, you will need a text editor that can handle HTML and CSS code. Some popular options include [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), and [Atom](https://atom.io/).
+To view and modify this project, you will need a text editor that can handle HTML and CSS code. Some popular options include [JetBrains](https://www.jetbrains.com/), [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), and [Atom](https://atom.io/).
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/user/sudoku-website.git`
+1. Clone the repository: `git clone https://github.com/LM-CZ-Projects/SAE-11-12-web.git`
 2. Open the HTML and CSS files in a text editor
 3. Make any desired changes to the code
 4. Open the HTML file in a web browser to view the website
