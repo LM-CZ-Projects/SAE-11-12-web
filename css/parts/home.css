@@ -420,89 +420,90 @@ body > .header > .menu > .content > .item > .link > .icon {
 
 .grids {
   display: flex;
-  grid-gap: 4rem;
+  grid-gap: 4em;
   flex-direction: column;
-  padding: calc(var(--default-horizontal-padding) / 2) var(--default-horizontal-padding);
+  padding: 3em 5em !important;
 }
-.grids > .header {
-  margin: 0;
+@media all and (max-width: 55rem) {
+  .grids {
+    display: none;
+  }
 }
-.grids > .showcase {
+.grids .list {
   display: flex;
-  flex-wrap: wrap;
-  grid-gap: 8rem;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.grids > .showcase > .size {
+.grids .list-size {
   display: flex;
-  flex: 0 0 auto;
-  grid-gap: 1rem;
+  grid-gap: 1.5em;
   align-items: center;
   flex-direction: column;
 }
-.grids > .showcase > .size > .title {
+.grids .list-size-title {
   font-weight: 700;
   line-height: 175%;
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
-.grids > .showcase > .size > .grid {
-  width: 272px;
-  display: grid;
-}
-.grids > .showcase > .size > .grid > .section > .cells {
-  display: grid;
-  grid-gap: 0.25rem;
-}
-.grids > .showcase > .size > .grid > .section > .cells > .cell {
-  user-select: none;
-}
-.grids > .showcase > .size:nth-child(1) > .grid {
-  grid-gap: 15.11px;
-  grid-template-columns: repeat(2, 1fr);
-}
-.grids > .showcase > .size:nth-child(1) > .grid > .section > .cells {
-  grid-gap: 7.56px;
-  grid-template-columns: repeat(2, 1fr);
-}
-.grids > .showcase > .size:nth-child(1) > .grid > .section > .cells > .cell {
-  font-size: 2rem;
-  font-weight: 700;
-  border-radius: 15px;
-}
-.grids > .showcase > .size:nth-child(2) > .grid {
-  grid-gap: 6.64px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.grids > .showcase > .size:nth-child(2) > .grid > .section > .cells {
-  grid-gap: 3.32px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.grids > .showcase > .size:nth-child(2) > .grid > .section > .cells > .cell {
-  font-weight: 700;
-  border-radius: 6px;
-}
-.grids > .showcase > .size:nth-child(3) > .grid {
-  grid-gap: 3.73px;
-  grid-template-columns: repeat(4, 1fr);
-}
-.grids > .showcase > .size:nth-child(3) > .grid > .section > .cells {
-  grid-gap: 1.83px;
-  grid-template-columns: repeat(4, 1fr);
-}
-.grids > .showcase > .size:nth-child(3) > .grid > .section > .cells > .cell {
-  font-weight: 700;
-  font-size: 0.5rem;
-  border-radius: 3px;
-}
-
-.grids > .showcase > .size > .grid > .section > .cells > .cell {
+.grids .list-size-part {
   display: flex;
-  aspect-ratio: 1/1;
-  line-height: 100%;
-  align-items: center;
-  justify-content: center;
+  grid-gap: 0.5em;
+  flex-direction: column;
+}
+.grids .list-size-part-grid {
+  display: grid;
+}
+.grids .list-size-part-grid-cell {
+  display: grid;
+}
+.grids .list-size-part-grid-cell-number {
+  overflow: hidden;
+  display: grid;
+  border-radius: 30%;
+  place-items: center;
   background-color: var(--background-accent);
+}
+.grids .list-size-part-caption {
+  opacity: 0.4;
+  font-size: 0.8em;
+}
+.grids .list-size.x4 .list-size-part-grid {
+  grid-gap: 15.11px;
+  grid-template-rows: repeat(2, 128.44px);
+  grid-template-columns: repeat(2, 128.44px);
+}
+.grids .list-size.x4 .list-size-part-grid-cell {
+  grid-gap: 7.56px;
+  grid-template-rows: repeat(2, 60.44px);
+  grid-template-columns: repeat(2, 60.44px);
+}
+.grids .list-size.x4 .list-size-part-grid-cell-number {
+  font-size: 1.5em;
+}
+.grids .list-size.x9 .list-size-part-grid {
+  grid-gap: 6.63px;
+  grid-template-rows: repeat(3, 86.24px);
+  grid-template-columns: repeat(3, 86.24px);
+}
+.grids .list-size.x9 .list-size-part-grid-cell {
+  grid-gap: 3.32px;
+  grid-template-rows: repeat(3, 26.54px);
+  grid-template-columns: repeat(3, 26.54px);
+}
+.grids .list-size.x9 .list-size-part-grid-cell-number {
+  font-size: 1em;
+}
+.grids .list-size.x16 .list-size-part-grid {
+  grid-gap: 3.73px;
+  grid-template-rows: repeat(4, 65.21px);
+  grid-template-columns: repeat(4, 65.21px);
+}
+.grids .list-size.x16 .list-size-part-grid-cell {
+  grid-gap: 1.86px;
+  grid-template-rows: repeat(4, 14.9px);
+  grid-template-columns: repeat(4, 14.9px);
+}
+.grids .list-size.x16 .list-size-part-grid-cell-number {
+  font-size: 0.5em;
 }
 
 .online-games, .society-games {
