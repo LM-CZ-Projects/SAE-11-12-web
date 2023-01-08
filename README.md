@@ -22,4 +22,4 @@ To view and modify this project, you will need a text editor that can handle HTM
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details.
