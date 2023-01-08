@@ -4,7 +4,7 @@
   display: flex;
   grid-gap: 4em;
   flex-direction: column;
-  padding: 3em 5em !important;
+  padding: calc(var(--default-horizontal-padding) / 2) var(--default-horizontal-padding) !important;
 
   @include mixins.break {
     display: none;

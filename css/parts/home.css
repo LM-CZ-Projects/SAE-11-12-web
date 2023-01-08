@@ -422,7 +422,7 @@ body > .header > .menu > .content > .item > .link > .icon {
   display: flex;
   grid-gap: 4em;
   flex-direction: column;
-  padding: 3em 5em !important;
+  padding: calc(var(--default-horizontal-padding) / 2) var(--default-horizontal-padding) !important;
 }
 @media all and (max-width: 55rem) {
   .grids {
