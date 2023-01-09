@@ -4,6 +4,12 @@ This project generates a simple website about sudoku, a popular puzzle game. The
 
 Please note that this website does not include a feature for the user to play sudoku online. It is intended for educational purposes only, and is intended for use by professors only, not the general public.
 
+## Generation Program
+
+The web site can be generated with the C# program but couldn't be compiled by yourselves for now. It will be update soon and will use the file dialog to select and load any file you want.
+
+You'll just find two HTML files (first is empty with placeholders; second is filled by the programm using the **home made** grid loader system)
+
 ## Prerequisites
 
 To view and modify this project, you will need a text editor that can handle HTML and CSS code. Some popular options include [JetBrains](https://www.jetbrains.com/), [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), and [Atom](https://atom.io/).
